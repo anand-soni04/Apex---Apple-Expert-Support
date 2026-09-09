@@ -1,0 +1,117 @@
+{
+  "execution_time_seconds": 12.53,
+  "dataset_size": 200,
+  "systems": {
+    "baseline_1_trivial": {
+      "automated_metrics": {
+        "system_name": "Baseline 1 (Trivial)",
+        "sample_count": 200,
+        "intent_accuracy": 0.545,
+        "intent_macro_f1": 0.1176,
+        "intent_weighted_f1": 0.3845,
+        "escalation_accuracy": 0.67,
+        "escalation_precision": 0.0,
+        "escalation_recall": 0.0,
+        "escalation_f1": 0.0,
+        "false_auto_handle_rate": 1.0,
+        "rouge_1": 0.335,
+        "rouge_2": 0.1304,
+        "rouge_l": 0.2775,
+        "bleu_4": 0.0872,
+        "semantic_similarity": 0.1311,
+        "policy_compliance_rate": 1.0,
+        "confusion_counts": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 66,
+          "tn": 134
+        }
+      },
+      "judge_summary": {
+        "tone": 4.0,
+        "diagnostic": 4.0,
+        "groundedness": 5.0,
+        "escalation": 5.0,
+        "overall": 4.55
+      }
+    },
+    "baseline_2_simple": {
+      "automated_metrics": {
+        "system_name": "Baseline 2 (Simple)",
+        "sample_count": 200,
+        "intent_accuracy": 0.76,
+        "intent_macro_f1": 0.5772,
+        "intent_weighted_f1": 0.7074,
+        "escalation_accuracy": 0.735,
+        "escalation_precision": 0.7097,
+        "escalation_recall": 0.3333,
+        "escalation_f1": 0.4536,
+        "false_auto_handle_rate": 0.6667,
+        "rouge_1": 0.2648,
+        "rouge_2": 0.0959,
+        "rouge_l": 0.2116,
+        "bleu_4": 0.0625,
+        "semantic_similarity": 0.1346,
+        "policy_compliance_rate": 0.82,
+        "confusion_counts": {
+          "tp": 22,
+          "fp": 9,
+          "fn": 44,
+          "tn": 125
+        }
+      },
+      "judge_summary": {
+        "tone": 4.5,
+        "diagnostic": 2.92,
+        "groundedness": 4.55,
+        "escalation": 4.16,
+        "overall": 4.1
+      }
+    },
+    "proposed_agent": {
+      "automated_metrics": {
+        "system_name": "Proposed AI Agent",
+        "sample_count": 200,
+        "intent_accuracy": 0.89,
+        "intent_macro_f1": 0.8411,
+        "intent_weighted_f1": 0.8804,
+        "escalation_accuracy": 0.915,
+        "escalation_precision": 1.0,
+        "escalation_recall": 0.7424,
+        "escalation_f1": 0.8522,
+        "false_auto_handle_rate": 0.2576,
+        "rouge_1": 0.2109,
+        "rouge_2": 0.0485,
+        "rouge_l": 0.1614,
+        "bleu_4": 0.0295,
+        "semantic_similarity": 0.1064,
+        "policy_compliance_rate": 0.92,
+        "confusion_counts": {
+          "tp": 49,
+          "fp": 0,
+          "fn": 17,
+          "tn": 134
+        }
+      },
+      "judge_summary": {
+        "tone": 4.72,
+        "diagnostic": 4.69,
+        "groundedness": 4.97,
+        "escalation": 4.98,
+        "overall": 4.86
+      }
+    }
+  },
+  "human_judge_calibration": {
+    "sample_count": 200,
+    "exact_agreement_rate": 0.38,
+    "within_1_agreement_rate": 0.98,
+    "quadratic_weighted_kappa": 0.4579,
+    "pearson_correlation": 0.5922,
+    "spearman_rank_correlation": 0.5933,
+    "mean_absolute_error": 0.64,
+    "mean_human_score": 3.57,
+    "mean_judge_score": 4.04,
+    "leniency_bias": 0.47
+  }
+}
